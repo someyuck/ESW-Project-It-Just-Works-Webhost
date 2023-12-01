@@ -1,7 +1,7 @@
 # pip install Flask-Mail
 
 from flask import Flask, request, render_template, redirect, url_for
-from flask_mail import Mail, Message
+# from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 app.config['MAIL_DEFAULT_SENDER'] = 'vinit2004mehtaa@gmail.com'
 
-mail = Mail(app)
+# mail = Mail(app)
 
 
 #routes and view functions for all the html pages
@@ -31,9 +31,9 @@ def contact():
         message = request.form['message']
 
         # Create and send the email using Flask-Mail
-        msg = Message(subject, recipients=['recipient@example.com'])
-        msg.body = f"Name: {name}\nEmail: {email}\nSubject: {subject}\nMessage: {message}"
-        mail.send(msg)
+        # msg = Message(subject, recipients=['recipient@example.com'])
+        # msg.body = f"Name: {name}\nEmail: {email}\nSubject: {subject}\nMessage: {message}"
+        # mail.send(msg)
         
         return render_template('index.html')
 
