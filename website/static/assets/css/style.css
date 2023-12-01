@@ -944,7 +944,7 @@ section {
 }
 
 .image-gallery .testimonial-item .image-gallery-img {
-  height: 700px;
+  width: 100%;
   border: 4px solid #fff;
   margin: 0 auto;
 }
@@ -995,6 +995,12 @@ section {
   .image-gallery .testimonial-item p {
     width: 80%;
   }
+}
+
+@media (min-width: 992px) {
+  .image-gallery .testimonial-item .image-gallery-img {
+    height: 700px;
+  }  
 }
 
 /*--------------------------------------------------------------
